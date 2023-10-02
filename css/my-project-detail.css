@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #e3e7eb;
+}
+
+/* Nav Bar */
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    background-color: whitesmoke;
+    color: black;
+    font-weight: 600;
+}
+  
+nav .left-side {
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+  
+nav .left-side ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+  
+nav .left-side ul li {
+    margin-right: 50px;
+}
+  
+nav .left-side ul li img {
+    max-height: 49px;
+}
+  
+nav .left-side ul li a {
+    color: black;
+}
+  
+nav .left-side ul li a:hover {
+    color: gray;
+}
+  
+nav .right-side {
+    display: flex;
+    width: 50%;
+    margin-right: 25px;
+    justify-content: flex-end;
+    align-items: center;
+}
+  
+nav .right-side a {
+    padding: 5px 10px 10px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+  
+nav .right-side a:hover {
+    background-color: gray;
+    color: white;
+}
+
+/* Project Detail */
+
+.project-page {
+  display: flex;
+  flex-direction: column;
+  padding: 70px;
+  width: 1000px auto;
+}
+
+.project-page .proj-title h1 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.proj-detail {
+  display: flex;
+  margin-top: 40px;
+}
+
+.proj-img {
+  justify-content: flex-start;
+}
+
+.proj-img img {
+  width: 650px;
+}
+
+.proj-detail-info {
+  width: 500px;
+  margin-left: 110px;
+}
+
+.duration-info img {
+  width: 25px;
+}
+
+.duration-info label {
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.duration-info div {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.proj-desc {
+  margin-top: 60px;
+}
+
+.proj-desc p {
+  text-align: justify;
+}
+
+.tech-info {
+  margin-top: 20px;
+  display: flex;
+}
+
+.tech-info img {
+  width: 25px;
+}
+
+.tech-info label {
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.tech-info .left-info div {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.tech-info .right-info div {
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+  padding: 5px;
+}
