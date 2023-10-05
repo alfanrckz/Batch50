@@ -1,4 +1,4 @@
-let projects = []
+let projects = [];
 
 
 
@@ -15,7 +15,7 @@ function addProject(event){
     let getIcon3 = document.getElementById('next')
     let getIcon4 = document.getElementById('type')
     
-    let printIcon = ""
+    let printIcon = "";
 
     if(getIcon1.checked == true){
         printIcon += '<img value="node" id="node" src="/images/next.png" alt="">'
@@ -48,7 +48,7 @@ function addProject(event){
 
     projects.push(projectDetail)
 
-    displayProject()
+    renderProject()
 
     console.log(projects);
 
@@ -56,7 +56,7 @@ function addProject(event){
 
 
 
-function displayProject(){
+function renderProject(){
     
 
     let projectContainer = document.getElementById('project-list')

@@ -81,6 +81,9 @@ nav .right-side a:hover {
   .container-1 .form-container {
     display: flex;
     box-sizing: border-box;
+    width: 350px;
+    margin: 50px auto;
+    padding: 10px;
   }
   
   .container-1 .form-container h4 {
@@ -232,6 +235,7 @@ nav .right-side a:hover {
     text-align: center;
     margin-top: 50px;
     color: #ffffff;
+    
   }
   
   .project-list {
