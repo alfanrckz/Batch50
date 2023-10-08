@@ -1,61 +1,71 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Profile Card</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="/css/style.css"/>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
-  <body>
-    <nav> 
-      <div class="navbar-left">
-          <ul>
-              <li><img src="/images/logo.png" alt="logo" />
-              </li>
-              <li><a href="index.html" class="active"> Home</a> </li>
-              <li><a href="/html/my-project.html"> My Project </a> </li>
-          </ul>
-      </div>
-      <div class="navbar-right">
-          <a href="/html/contact.html"> Contact Me </a>
-      </div>
-  </nav>
-    <main>
-      <div class="card">
-        <section>
-          <h1>Hi Welcome To My Hut</h1>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis praesentium officiis ut magnam dignissimos laboriosam minus. At repellendus enim iure labore, quos laboriosam quis. Nisi molestiae nulla voluptatem id quaerat, eos consequuntur ducimus iure magnam necessitatibus? Nihil animi, vel fugiat amet reprehenderit quisquam nisi, voluptate voluptatibus repellat, necessitatibus repudiandae temporibus?
-          </p>
-          <div class="tombol-klik">
-            <p> <button name="button" class="button2">Contact</button>
-              Download CV
-              <a href="#"><i class="fa-solid fa-download"></i></a>
-            </p> 
-          </div>
-          
-          <!-- ini bagian untuk sosmed -->
-          <div class="social-media">
-              <a href="#"><i class="fa-brands fa-square-instagram"></i></a> 
-              <a href="#"><i class="fa-brands fa-facebook"></i></a> 
-              <a href="#"><i class="fa-brands fa-square-twitter"></i></a> 
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a> 
-          </div>
-      </section>
-        
-
-        <div class="inner-card">
-          <img src="/images/foto.jpeg" alt="Alfansyuri Ziaulhaq" />
-          <h1>Alfansyuri Ziaulhaq</h1>
-          <p>Full-Stack Developer</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Profil Card</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-left">
+            <ul>
+                <li> <img src="images/logo.png" alt="logo"> </li>
+                <li class="item-collapse"> <a class="active" href="index.html">Home</a> </li>
+                <li class="item-collapse"> <a href="/html/blog.html">My Project</a> </li>
+                <li class="item-collapse"> <a href="#">My Testimonial</a> </li>
+            </ul>
         </div>
-      </div>
-    </main>
-  </body>
+        <div class="nav-right item-collapse">
+            <a href="/html/contact.html">Contact Me</a>
+        </div>
+        <div class="nav-right" id="bars-menu">
+            <button style="background-color: transparent; border: none; cursor: pointer;"
+                onclick="openHamburger()">
+                <i class="fa-2x fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+        <a href="index.html" class="hamburger-active">Home</a>
+        <a href="/html/blog.html">My Project</a>
+        <a href="/html/contact.html"><p class="contact-me">Contact Me</p></a>
+    </div>
+
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <div class="container-left">
+            <h1>Hi Welcome to my hut</h1>
+            <p class="main-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum sed molestiae perferendis tenetur dolorum nobis molestias natus illum. Incidunt temporibus odit nisi natus veritatis atque laudantium obcaecati maxime, totam porro! Impedit porro, libero debitis corporis nihil neque. Animi, error iste! Eius, voluptate dolorem? Quae, iure?
+            </p>
+
+            <div class="personal">
+                <a href="#" target="_blank"><button class="contact">contact</button></a>
+                download CV 
+                <a href="#"><img class="download-icon" src="images/download_icon.png"></a>
+            </div>
+          
+            <div class="social-media">
+                <a  href="#" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" target="_blank">
+                    <i class="fa-brands fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+
+        <div class="id-card">
+            <img class="my-picture" src="images/foto.jpeg">
+            <p class="name"><b>Alfansyuri Ziaulhaq</b></p>
+            <p class="course">Fullstack Developer</p>
+        </div>
+    </div>
+
+    <script src="/js/index.js"></script>
+</body>
 </html>

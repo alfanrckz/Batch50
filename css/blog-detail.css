@@ -57,6 +57,10 @@ nav ul li a:hover {
     background-color: orangered;
 }
 
+.active {
+    font-weight: bold;
+}
+
 #bars-menu {
     display: none;
 }
@@ -102,69 +106,94 @@ nav ul li a:hover {
 
 /* End Of NavBar */
 
-h1 {
+/* Blog Details */
+.blog-details {
+    display: flex;
+    justify-content: center;
+}
+
+.blog-details-containers {
+    width: 90%;
+    margin: 40px 0;
+}
+
+.blog-details-containers h1{
+    font-size: 44px;
+    margin-bottom: 20px;
     text-align: center;
-    margin-top: 50px;
 }
 
-form {
-    width: 600px;
-    margin: 50px auto;
-    padding: 10px;
+.blog-details-containers .blog-information {
+    display: flex;
+    flex-direction: row;
 }
 
-form div {
-    margin-top: 15px;
+.blog-information .blog-picture {
+    flex: 65%;
+    margin-right: 40px;
 }
 
-label {
-    font-weight:600;
-    font-size: 25px;
-}
-
-input, select, textarea {
-    background-color: rgb(202, 194, 194);
+.blog-information .blog-picture img {
     width: 100%;
-    padding: 10px;
-    margin-top: 0;
-    border-radius: 5px;
-    border: 1px solid #8a8282;
-    resize: none;
-    font-size: 25px;
 }
 
-select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background: rgb(202, 194, 194);
-    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='100' viewBox='0 0 24 24' width='75' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
-    background-repeat: no-repeat;
-    background-position-x: 100%;
-    background-position-y: 50%;
-    padding: 13px;
-    appearance: none;
-  }
-
-input, textarea {
-    width: calc(100% - 21px);
+.blog-information .blog-duration-and-technology {
+    flex: 35%;
 }
 
-.submit {
-    background-color: black;
-    color: white;
-    padding: 6px 32px;
-    border-radius: 25px;
-    margin-top: 15px;
-    margin-bottom: 30px;
-    float: right;
-    font-weight: bold;
+.blog-information h2 {
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.blog-duration-and-technology div div {
+    display: flex;
+    flex-direction: row;
+}
+
+.blog-duration-and-technology img {
+    width: 40px;
+    margin-right: 10px;
+    margin-bottom: 0;
+    position: relative;
+    top: 15px;
+}
+
+.blog-duration-and-technology p {
     font-size: 20px;
-    cursor: pointer;
+    font-weight: 500;
+    color: #030303;
+    margin-top: 0;
+    margin-bottom: 5px;
 }
 
-button:hover {
-    transform: scale(1.1) ;
-    background-color: orangered;
+.blog-duration-and-technology .blog-technology {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.blog-content {
+    margin-top: 40px;
+}
+
+.blog-content p {
+    font-size: 17px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 900px) {
+    .blog-details-containers .blog-information {
+        display: block;
+    }
+
+    .blog-information .blog-picture {
+        margin: 20px 0px;
+    }
+
+    .blog-duration-and-technology .blog-technology {
+        width: 60%;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -179,9 +208,8 @@ button:hover {
     .nav-right {
         margin-right: 20px;
     }
-
-    form {
-        width: 90%;
+    
+    .blog-duration-and-technology .blog-technology {
+        display: block;
     }
-
 }
