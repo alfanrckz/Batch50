@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(/images/foto.jpeg);
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background-color: transparent;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: orangered;
+}
+
+.nav-left {
+    flex: 50%;
+}
+
+.nav-right {
+    flex: 50%;
+    text-align: end;
+    margin-right: 60px;
+}
+
+.nav-right a {
+    background-color: black;
+    color: white;
+    padding: 8px 22px;
+    border-radius: 5px;
+}
+
+.nav-right a:hover {
+    background-color: orangered;
+}
+
+.active {
+    font-weight: bold;
+}
+
+#bars-menu {
+    display: none;
+}
+
+.hamburger-nav-container {
+    font-size: 20px;
+    list-style-type: none;
+    display: none;
+}
+
+.hamburger-nav-container a {
+    text-decoration: none;
+    color: black;
+    background-color: #cdc9c9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: none;
+}
+
+.hamburger-nav-container a:hover {
+    color: orangered;
+}
+
+.hamburger-nav-container .hamburger-active {
+    font-weight: bold;
+}
+
+.hamburger-nav-container .contact-me {
+    background-color: black;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin: 0;
+    font-size: 18px;
+}
+
+.hamburger-nav-container .contact-me:hover {
+    background-color: orangered;
+    color: black;
+}
+
+/* End of NavBar */
+
+.container {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.testimonial {
+    
+    width: 25%;
+    margin: 0 15px 30px 15px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgb(14, 12, 12);
+    
+
+}
+
+.testimonial img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+.quote {
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.author {
+    
+    align-items: center;
+    font-weight: bold;
+    text-align: right;
+}
+
+.profile-testimonial {
+    width: 100%;
+}
+
+.container-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rating-btn {
+    margin: 20px;
+    padding: 0 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+.rating-btn i {
+    color: white;
+}
+
+.rating-btn:hover {
+    background-color: orangered;
+    color: white;
+}
+
+/* End of Testimonials */
+
+@media only screen and (max-width: 600px) {
+    .item-collapse {
+        display: none;
+    }
+
+    #bars-menu {
+        display: block;
+    }
+
+    .nav-right {
+        margin-right: 20px;
+    }
+
+    .testimonial {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 900px) and (min-width: 601px) {
+
+    .testimonial {
+        width: 40%;
+    }
+}
